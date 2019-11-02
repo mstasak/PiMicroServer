@@ -1,0 +1,4 @@
+- Raspberry Pi 3B
+- 512 GB 2.5" SATA SSD (Silicon Power), USB powered drive enclosure
+- Typical KB, Mouse, Monitor
+- Nano USB wifi adapter
