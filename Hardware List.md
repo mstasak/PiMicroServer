@@ -1,0 +1,3 @@
+- Raspberry Pi 3B, with power supply, heatsinks, and enclosure.
+- 512 GB 2.5" SATA SSD (Silicon Power), USB powered drive enclosure
+- Typical USB KB, USB Mouse, small FHD Monitor
