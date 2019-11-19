@@ -1,0 +1,18 @@
+Objective is to install latest version of Raspbian Pi OS - a clean install overwriting any prior data.
+
+Power down your Pi, if it's on.
+Take the external Drive to a PC.
+Connect the drive.
+Using Windows Disk Management, reformat the drive as a 32GB FAT32 (small) drive.
+(for me, find the correct drive - carefully, delete all volumes, select unused space, create a simple volume, assign a drive letter, Next, do not format, finish.
+Then select the raw partition, right-click, Shrink, and shrink it to 30000 MB.  This is small enough for a FAT32 partition, instead of ExFAT.
+Right-click the partition and quick format it as a FAT32 volume.
+Download NOOBS light installer - around 40MB - from https://www.raspberrypi.org/downloads/noobs/
+Unzip NOOBS installer into the root of the external drive.
+Eject the drive.
+Take it to your Pi, attach it, and power it up.  NOOBS Lite should boot.  If not, check for an SD card in the Pi, remove it, and retry.
+Connect NOOBS to your network.  Select Raspbian full.  Select your language and keyboard, and click install.  The drive will be repartitioned and reformatted, and NOOBS will be overwritten or saved as a small recovery partition of some sort.
+Wait a little while, around 6GB of files must be downloaded and installed.
+Follow the prompts, finish the installation, check things out - does network work?
+
+Good job, the OS is installed, next step is to install some server features.
