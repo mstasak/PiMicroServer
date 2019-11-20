@@ -10,3 +10,4 @@ sudo apt-get install xrdp
 
 Now I was able to access my Pi server using Windows remote desktop.  VNC should work as well, but I get an actively refused error when I try, suggesting I need to lower security or manually share a public cert.  RDP works for me.
 
+I had a bit of trouble connecting until I used my Pi's IPV4 local address instead of its hostname.
