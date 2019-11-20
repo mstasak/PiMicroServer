@@ -5,17 +5,25 @@ and configuration tools seems assured.
 
 The link above outlines installation, which went as follows:
 
+```shell
 sudo apt-get update
 sudo apt-get install mariadb-server
+```
 
 MariaDB is now installed, running (as service mysql) and ready for configuration and operation.
 
 To check:
-service mysql status
 
+```shell
+service mysql status
+```
+
+```shell
 mysql -u pi -p
 (permission denied error)
+```
 
+```shell
 sudo mysql
 (apparently connected as DBA, can create/enable users, create databases, grant roles and privileges)
 MariaDB [(none)]> show databases;
@@ -29,3 +37,4 @@ MariaDB [(none)]> show databases;
 3 rows in set (0.001 sec)
 
 MariaDB [(none)]>
+```
