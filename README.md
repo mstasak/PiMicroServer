@@ -10,13 +10,13 @@ I've configured my Pi with a USB3 SATA SDD (512MB) to improve on the performance
 
 ## Define the stack
 ### File Server
-Using SAMBA, sharing one directory: /var/samba/shared/
+Using [SAMBA](SambaService.md), sharing one directory: /var/samba/shared/
 ### Web Server
-Incomplete; will probably use Apache HTTPD 2.x
+Incomplete; will probably use [Apache](AppacheHTTPServer.md) HTTPD 2.x
 ### DB Server(s)
-Incomplete; will probably use MariaDB, a MySQL fork
+Using [MariaDB](MariaDBService.md), a MySQL fork
 ### SCM Server
-Incomplete; will probably use GitLab CE, over Apache HTTP 2.x?  I think some versions also work over NGINX?
+Incomplete; will probably use [GitLab CE](GitLabService.md), over Apache HTTP 2.x?  I think some versions also work over NGINX?
 
 ## Implementation
 
