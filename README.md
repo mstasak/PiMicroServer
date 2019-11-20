@@ -12,7 +12,7 @@ I've configured my Pi with a USB3 SATA SDD (512MB) to improve on the performance
 ### File Server
 Using [SAMBA](SambaService.md), sharing one directory: /var/samba/shared/
 ### Web Server
-Incomplete; will probably use [Apache](AppacheHTTPServer.md) HTTPD 2.x
+Incomplete; will probably use [Apache](ApacheHTTPServer.md) HTTPD 2.x
 ### DB Server(s)
 Using [MariaDB](MariaDBService.md), a MySQL fork
 ### SCM Server
