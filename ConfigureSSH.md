@@ -1,0 +1,1 @@
+For text terminal remote access, SSH is nice.  Just open preferences, Raspberry Pi Configuration, Interfaces, and make sure SSH is enabled.  Then on your remote computer, use a command like putty pi@raspberrypi or ssh pi@raspberrypi.
