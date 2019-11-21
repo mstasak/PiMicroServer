@@ -4,10 +4,12 @@ I installed using instructions from [here](https://howtoraspberrypi.com/private-
 
 ```shell
 
-sudo /etc/init.d/dphys-swapfile
+sudo /etc/init.d/dphys-swapfile stop
+sudo vi /etc/init.d/dphys-swapfile
 (replace 100 with 2048, around line 13)
 Esc,Z,Z (three keys, skit the commas, to save and exit vi)
-sudo /etc/init.d/dphys-swapfile restart
+sudo /etc/init.d/dphys-swapfile start
+
 sudo apt install curl openssh-server ca-certificates postfix apt-transport-https
 
 curl https://packages.gitlab.com/gpg.key | sudo apt-key add -
