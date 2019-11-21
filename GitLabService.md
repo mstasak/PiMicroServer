@@ -1,6 +1,7 @@
 GitLab CE provides a git server for SCM.
 
 I installed using instructions from [here](https://howtoraspberrypi.com/private-git-raspberry-gitlab/).
+I also added a few tuning recommendations from [here](https://docs.gitlab.com/omnibus/settings/rpi.html)
 
 ```shell
 
