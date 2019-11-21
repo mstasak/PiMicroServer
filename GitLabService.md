@@ -21,6 +21,13 @@ sudo apt-get update
  
 sudo apt-get install gitlab-ce
 
+#reconfigure gitlab ce for reduced resource usage
+sudo vi /etc/gitlab/gitlab.rb
+change: unicorn['worker_processes'] = 2
+change: sidekiq['concurrency'] = 9//
+add: prometheus['monitoring'] = false
+(save)
+
 sudo gitlab-ctl reconfigure
 
 ```
