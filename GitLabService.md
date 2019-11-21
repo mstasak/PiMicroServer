@@ -4,10 +4,11 @@ I installed using instructions from [here](https://howtoraspberrypi.com/private-
 
 ```shell
 
-sudo /etc/init.d/dphys-swapfile stop
+#increase swapfile size, or gitlab-ctl reconfigure may exhaust RAM.
 sudo vi /etc/init.d/dphys-swapfile
-(replace 100 with 2048, around line 13)
+(replace CONF_SWAPSIZE=100 with CONF_SWAPSIZE=2048, around line 13)
 Esc,Z,Z (three keys, skit the commas, to save and exit vi)
+sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 
 sudo apt install curl openssh-server ca-certificates postfix apt-transport-https
