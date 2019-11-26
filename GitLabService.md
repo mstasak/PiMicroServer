@@ -8,7 +8,7 @@ I also added a few tuning recommendations from [here](https://docs.gitlab.com/om
 #increase swapfile size, or gitlab-ctl reconfigure may exhaust RAM.
 sudo vi /etc/init.d/dphys-swapfile
 (replace CONF_SWAPSIZE=100 with CONF_SWAPSIZE=2048, around line 13)
-Esc,Z,Z (three keys, skit the commas, to save and exit vi)
+Esc,Z,Z (three keys, skip the commas, to save and exit vi)
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 
@@ -25,7 +25,7 @@ sudo apt-get install gitlab-ce
 #reconfigure gitlab ce for reduced resource usage
 sudo vi /etc/gitlab/gitlab.rb
 change: unicorn['worker_processes'] = 2
-change: sidekiq['concurrency'] = 9//
+change: sidekiq['concurrency'] = 9
 add: prometheus['monitoring'] = false
 (save)
 
